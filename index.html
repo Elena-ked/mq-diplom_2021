@@ -8,8 +8,63 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
 
+  <div class="popup _hidden">
+     <div class="popup-container">
+        <div class="feedback">
+           <h3 class="feedback-title">Ваш фидбек</h3>
+        </div>
+        <div class="feedback-content">
+           <form action="" class="feedback-form">
+              <div class="form-row">
+                 <label for="" class="feedback-label">
+                    <span class="form-hint">Как часто вы заходите на сайт?</span>
+                    <select name="" id="" class="question-form">
+                       <option value="">Почти каждый день</option>
+                       <option value="">Раз в несколько дней</option>
+                       <option value="">Раз в несколько недель</option>
+                       <option value="">Несколько раз в год</option>
+                    </select>
+                 </label>
+              </div>
+            </label>
+
+                <label class="form-row">
+                    <span class="form-hint">Вы подписаны на e-mail на рассылку?</span></label>
+
+                    <div class="popup_subscribe_radio">
+                        <label class="feedback-radio">
+                        <input type="radio" class="radio">
+                            <span class="radio-text">Да</span></label>
+
+                        <label class="feedback-radio">
+                        <input type="radio" class="radio">
+                            <span class="radio-text">Нет</span></label>
+                    </div>
+
+                    <div class="form-row">
+                      <label class="popup_content">
+                <span class="form-hint">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
+                <textarea class="popup_textarea" placeholder="Может, больше рецептов?"></textarea>
+        </label>
+                    </div>
+
+              <div class="form-row">
+                 <button class="button" type="submit">
+                    Отправить
+                 </button>
+              </div>
+
+           </form>
+
+        </div>
+        <button class="popup-close" type="button">
+           <span class="popup-close-text">Закрыть окно</span>
+        </button>
+     </div>
+  </div>
+
+  <header class="header">
      <div class="container-header">
         <div class="header-box">
 
@@ -50,55 +105,7 @@
 
   </header>
 
-  <div class="popup _hidden">
-     <div class="popup-container">
-        <div class="feedback">
-           <h3 class="feedback-title">Ваш фидбек</h3>
-        </div>
-        <div class="feedback-content">
-           <form action="" class="feedback-form">
-              <div class="form-row">
-                 <label for="" class="feedback-label">
-                    <span class="form-hint">Как часто вы заходите на сайт?</span>
-                    <select name="" id="" class="question-form">
-                       <option value="">Почти каждый день</option>
-                       <option value="">Раз в несколько дней</option>
-                       <option value="">Раз в несколько недель</option>
-                       <option value="">Несколько раз в год</option>
-                    </select>
-                 </label>
-              </div>
-              <div class="form-row">
-                 <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
-                 <label for="" class="feedback-radio">
-                    <input type="radio" class="asks-input">
-                    <span class="radio-text">Да</span>
-                 </label>
-                 <label for="" class="feedback-radio">
-                    <input type="radio" class="asks-input">
-                    <span class="radio-text">Нет</span>
-                 </label>
-              </div>
-              <div class="form-row">
-                 <label for="" class="feedback-label">
-                    <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-                    <input type="text" class="input-content" placeholder="Может больше рецептов?">
-                 </label>
-              </div>
-              <div class="form-row">
-                 <button class="button" type="submit">
-                    Отправить
-                 </button>
-              </div>
 
-           </form>
-
-        </div>
-        <button class="popup-close" type="button">
-           <span class="popup-close-text">Закрыть окно</span>
-        </button>
-     </div>
-  </div>
 
   <div class="main-content">
      <section class="trends">
@@ -411,7 +418,9 @@
                              <span class="price-old">1000 &#8381;</span>
                              <span class="price-new">800 &#8381;</span>
                           </div>
-                          <button type="button" class="in-store">В магазин</button>
+                          <div class="shop-button">
+                    <a href="#0">В магазин</a>
+                </div>
                        </div>
                     </div>
                  </div>
@@ -438,7 +447,9 @@
 
                           <p class="price-new">3500 &#8381;</p>
                        </div>
-                       <button type="button" class="in-store">В магазин</button>
+                       <div class="shop-button">
+                    <a href="#0">В магазин</a>
+                </div>
                     </div>
                  </div>
               </div>
@@ -466,7 +477,9 @@
                           <p class="price-old">500 &#8381;</p>
                           <p class="price-new">400 &#8381;</p>
                        </div>
-                       <button type="button" class="in-store">В магазин</button>
+                       <div class="shop-button">
+                     <a href="#0">В магазин</a>
+                 </div>
                     </div>
                  </div>
               </div>
