@@ -81,6 +81,7 @@ body {
 }
 
 .menu {
+  position: relative;
   align-self: flex-end;
   font-weight: 400;
   font-size: 13px;
@@ -89,8 +90,8 @@ body {
 }
 
 .menu-burger {
-  position: absolute;
-  width: 24px;
+  position: relative;
+  width: 36px;
   height: 20px;
   text-indent: -9999px;
   border: none;
@@ -105,9 +106,9 @@ body {
 .menu-burger::after {
   content: "";
   position: absolute;
-  right: 16px;
+right: 1px;
   width: 100%;
-  height: 20%;
+  height: 15%;
   background-color: #ffffff;
 }
 
@@ -118,9 +119,9 @@ body {
 .menu-burger-label {
   position: absolute;
   top: 8px;
-  right: 16px;
+right: 1px;
   width: 100%;
-  height: 20%;
+  height: 15%;
   background-color: #ffffff;
 }
 
@@ -204,7 +205,7 @@ body {
 .form-row {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 34px;
+  margin-top: 5px;
 }
 
 .form-hint {
@@ -226,7 +227,6 @@ body {
   line-height: normal;
   font-size: 13px;
   color: #000000;
-  opacity: 0.54;
   border: none;
   background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
@@ -281,7 +281,7 @@ body {
 
 .popup_textarea {
   box-sizing: border-box;
-  width: 330px;
+  width: 100%;
   height: 130px;
   background-color: #f3f7f6;
   border: none;
@@ -326,7 +326,7 @@ body {
   background-image: url("../svg/form-x.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 27px;
+  background-size: 18px;
   background-color: transparent;
 }
 
@@ -1105,10 +1105,7 @@ body {
     padding-left: 43px;
     padding-top: 100px;
   }
-  .header-title {
-    line-height: 55px;
-    font-size: 5.2vw;
-  }
+
   .menu-burger::before,
   .menu-burger::after {
     right: 35px;
@@ -1141,7 +1138,6 @@ body {
   .trend-description {
     right: 19px;
     left: 20px;
-    width: calc(100% - 50px);
     padding-top: 36px;
     padding-left: 31px;
   }
