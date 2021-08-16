@@ -75,24 +75,25 @@ body {
 }
 
 .header-logo {
-  max-width: 269px;
+  width: 269px;
   margin-top: 160px;
   margin-bottom: 50px;
 }
 
 .menu {
   position: relative;
+  display: flex;
   align-self: flex-end;
   font-weight: 400;
   font-size: 13px;
-  line-height: 36px;
+  height: 21px;
   text-transform: uppercase;
 }
 
 .menu-burger {
   position: relative;
-  width: 36px;
-  height: 20px;
+  width: 28px;
+  height: 21px;
   text-indent: -9999px;
   border: none;
   background-color: transparent;
@@ -106,7 +107,7 @@ body {
 .menu-burger::after {
   content: "";
   position: absolute;
-right: 1px;
+  right: 1px;
   width: 100%;
   height: 15%;
   background-color: #ffffff;
@@ -118,8 +119,8 @@ right: 1px;
 
 .menu-burger-label {
   position: absolute;
-  top: 8px;
-right: 1px;
+  top: 9px;
+  right: 1px;
   width: 100%;
   height: 15%;
   background-color: #ffffff;
@@ -468,10 +469,17 @@ right: 1px;
   padding-bottom: 22px;
 }
 
-.article-post:nth-child(n + 2) {
-  margin-top: 35px;
-}
+.article-post::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #e1d9bd;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 22px;
 
+}
 .img-news {
   width: 100%;
   display: block;
@@ -770,9 +778,9 @@ right: 1px;
   border: 3px solid #eeeeee;
   display: inline-block;
   text-transform: uppercase;
-  padding: 11px 9px;
+  padding: 6px 9px 4px;
   margin-left: 0;
-  margin-right: 5px;
+  margin-right: 10px;
   margin-bottom: 6px;
 }
 
@@ -943,7 +951,7 @@ right: 1px;
     font-family: OpenSans, serif;
     font-size: 13px;
     font-weight: bold;
-    color: #f0ecde;
+    color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
 
@@ -1345,6 +1353,13 @@ right: 1px;
         display: flex;
      }
 
+     .article-post:nth-child(n + 2) {
+       margin-top: 35px;
+     }
+
+     .article-post::after {
+         display: none;
+}
      .picture-post {
         width: 49%;
         margin-right: 30px;
@@ -1419,7 +1434,6 @@ right: 1px;
      }
 
      .store-list {
-        align-self: baseline;
         width: calc(100% - 124px);
         margin-right: 62px;
         margin-bottom: 0;
@@ -1447,7 +1461,15 @@ right: 1px;
 
      .footer {
         margin-top: 65px;
+
      }
+
+    .address {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+      }
 
      .copyright {
         margin-top: 74px;
